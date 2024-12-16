@@ -1,0 +1,248 @@
+html,
+.favorites-collection { scroll-behavior: smooth; }
+
+body {
+  background-color: paleturquoise;
+  padding: 0;
+  color: black;
+} 
+
+.favorites-collection h3,
+.main-collection h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-family: "Indie Flower", cursive;
+}
+
+nav.navbar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4%;
+}
+
+.navbar img {
+  width: 600px;
+  max-width: 45%;
+  margin: auto;
+}
+
+.logo-on-favorites-page {
+  position: relative;
+  top: 0px;
+  right: 8px;
+}
+
+.tab-slide-function {
+  transition: 0.6s;
+}
+
+.border {
+  border: 1px solid #102d42;
+  box-shadow: 0 0 2px 2px #c5d563, 0 0 4px 6px #85c16b;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.alphabetize,
+.z-a,
+.slider-tab-open {
+  top: 30px;
+  left: 10px;
+}
+
+.z-a {
+  margin-left: 110px;
+}
+
+.slider-tab-open {
+  font-size: 1.2rem;
+  padding: 5px 5px;
+  left: 232px;
+}
+
+.button-styles {
+  background: #4eacc4;
+  font-size: 1.6rem;
+  border-radius: 2px;
+  font-family: "Indie Flower", cursive;
+  font-weight: 900;
+  padding: 1px 15px;
+  z-index: 60;
+  color: black;
+}
+
+.go-to-favorites-collection,
+.go-back-to-main-collection {
+  top: 96px;
+  left: 10px;
+}
+
+.open-data-dropdown-main-collection,
+.open-data-dropdown-fav-collection {
+  top: 166px;
+  left: 10px;
+}
+
+.data-dropdown-slider-main-collection,
+.data-dropdown-slider-fav-collection {
+  transition: 0.6s;
+  transform: translateY(-180px);
+  opacity: 0;
+  background:#4eacc4;
+  z-index: 5;
+  text-align: center;
+  padding: .5rem 0;
+}
+
+.main-data,
+.favorite-data {
+  top: 245px;
+  left: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "Indie Flower", cursive;
+  line-height: 1;
+  padding: 0 .625rem;
+}
+
+.card-container {
+  width: 74vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  grid-gap: 40px;
+}
+
+.favorites-collection {
+  top: 0px;
+  right: 0;
+  left: 0;
+  right: 0;
+  background-color: paleturquoise;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.mortyCards {
+  position: relative;
+  background-color:  #4EACC4;
+  max-width: 250px;
+}
+
+.image-wrapper {
+  width: 250px;
+  height: 250px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+ text-align: center;
+}
+
+.overlay h6 {
+  margin: 10px 0;
+  font-size: 1.25rem;
+  margin-left: 8px;
+  margin-left: 1rem;
+  font-family: "Indie Flower", cursive;
+}
+
+.overlay .like-button {
+  padding: 5px 10px;
+  max-width: 50%;
+  border: transparent;
+  background: transparent;
+  color: rgb(201, 0, 0);
+  font-size: 2.25rem;
+  font-weight: 600;
+  position: absolute;
+  bottom: -7px;
+  right: 5px;
+  z-index: 1;
+}
+
+.go-to-favorites-collection i,
+#scrollUp i,
+#scrollUpFavorites i {
+  position: relative;
+  top: 2px;
+}
+
+.slider-tab-open i {
+  position: relative;
+  top: 3px;
+}
+
+.translateY-down {
+  transform: none;
+  opacity: 1;
+}
+
+.translateX-left {
+  transform: translateX(-232px);
+}
+
+.translateX-left-and-up {
+  transform: translateX(-232px) translateY(-180px);
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.main-data h4,
+.favorite-data h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+  text-decoration: underline;
+  margin-top: 1.125rem
+}
+
+#scrollUp,
+#scrollUpFavorites {
+  font-family: "Indie Flower", cursive;
+  font-weight: 900;
+  color: black;
+  font-size: 24px;
+  font-weight: 900;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  position: fixed;
+  bottom: 0.688rem;
+  right: 30px;
+  text-align: center;
+  border-radius: 16px;
+  cursor: pointer;
+  z-index: 100;
+  padding: 8px 0;
+}
+
+.mobile-black-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.911);
+  z-index: 4;
+}
