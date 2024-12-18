@@ -183,6 +183,14 @@ const rick = fetch(
     );
     document.getElementById(button).innerHTML = dataMenuParameters[1];
   }
+  // Function to Clear Search Input and Show All Cards
+function clearSearch() {
+  document.getElementById("search-input").value = "";
+  const cards = document.querySelectorAll(".card-container .card");
+  cards.forEach((card) => {
+    card.style.display = ""; // Show all cards
+  });
+}
   
   const mobileOverlayClassList = document.getElementById(
     "mobile-responsive-screen-blackout-when-menu-selected"

@@ -18,7 +18,7 @@
       src="https://kit.fontawesome.com/710d95f475.js"
       crossorigin="anonymous"
     ></script>
-    <title>My Favorites Rick and Morty</title>
+    <title>Rick and Morty</title>
   </head>
   <body>
     <section class="main-collection" id="pageTop">
@@ -63,6 +63,17 @@
         </button>
       </nav>
       <h3>Main Collection</h3>
+
+<!-- Add Search Bar and Button -->
+<div class="search-bar-container">
+  <input
+    type="text"
+    id="search-input"
+    placeholder="Search character..."
+    onkeyup="filterCards()"
+  />
+  <button class="search-button" onclick="clearSearch()">Clear</button>
+</div>
       <div
         id="main-data-menu"
         class="data-dropdown-slider-main-collection border main-data position-fixed onscroll-event"
